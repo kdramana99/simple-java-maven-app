@@ -12,5 +12,9 @@ pipeline {
             }
         }
         
+         stage('Test') { 
+            steps {
+                sh 'mvn -B -DskipTests test' 
+            }
     }
 }
